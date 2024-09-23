@@ -1,4 +1,20 @@
 body
 {
-	font-family: arial;
+	font-family: Comic Sans MS;
+	background-color: rgb(34, 32, 32);
+}
+
+label[id="lblresult"] 
+{
+	color:rgb(157, 255, 0)
+}
+
+label[id="lblNum1"]
+{
+	color:white
+}
+
+label[id="lblNum2"]
+{
+	color:white
 }
