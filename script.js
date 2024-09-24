@@ -40,8 +40,8 @@ function Addition()
 
     if(First_Number == "69" || Second_Number == "69")
     {
+        ShowImage();
         PlayAudio();
-        ShowImage()
     }
 }
 
