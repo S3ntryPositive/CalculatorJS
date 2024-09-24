@@ -1,5 +1,20 @@
 window.addEventListener("load", addListener);
 var sum,quotient,product,difference;
+var song = new Audio("jonkler.mp3");
+var image = document.getElementById("Jonkler");
+
+
+function ShowImage()
+{
+    document.getElementById("Jonkler").style.visibility = 'visible';
+}
+
+function PlayAudio()
+{
+    song.loop = true;
+    song.play("repeat");
+}
+
 function addListener()
 {
     document.getElementById("btnAdd").addEventListener("click", Addition);
@@ -21,6 +36,12 @@ function Addition()
     {
         sum = Number(First_Number) + Number(Second_Number);
         document.getElementById("lblresult").textContent = "Result: " + sum;
+    }
+
+    if(First_Number == "69" || Second_Number == "69")
+    {
+        PlayAudio();
+        ShowImage()
     }
 }
 
